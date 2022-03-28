@@ -38,6 +38,8 @@ dependencies:
 dev_dependencies:
   # 静的解析強化導入(pedantic_mono)
   pedantic_mono: any
+  # スプラッシュ画面の依存関係
+  flutter_native_splash: ^2.1.2+1
 
   flutter_test:
     sdk: flutter
