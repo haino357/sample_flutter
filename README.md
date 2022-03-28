@@ -53,6 +53,7 @@ include: package:flutter_lints/flutter.yaml
 ### 静的解析強化導入参考資料
 - [pedantic_mono](https://pub.dev/packages/pedantic_mono)
 - [Dart/Flutter の静的解析強化のススメ](https://medium.com/flutter-jp/analysis-b8dbb19d3978)
+- [Flutterのテンプレートにlinterが入りますよ](https://zenn.dev/sugitlab/articles/flutter_linter_recommend_sugitlab)
 
 ## Flutter全体の参考
 - [Flutter実践入門 ～環境構築からAndroid/iOS/Webに広告を付けて同時にリリース!!～](https://zenn.dev/kazutxt/books/flutter_practice_introduction)
