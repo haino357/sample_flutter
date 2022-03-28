@@ -36,6 +36,9 @@ dependencies:
   cupertino_icons: ^1.0.2
 
 dev_dependencies:
+  # 静的解析強化導入(pedantic_mono)
+  pedantic_mono: any
+
   flutter_test:
     sdk: flutter
 

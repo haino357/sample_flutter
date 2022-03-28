@@ -7,7 +7,11 @@
 
 # The following line activates a set of recommended lints for Flutter apps,
 # packages, and plugins designed to encourage good coding practices.
-include: package:flutter_lints/flutter.yaml
+# include: package:flutter_lints/flutter.yaml  ← これはプロジェクトを作成するとデフォルトで作成される
+# 上記より下記のlintsの方が強化版になるため、下記を優先する。
+
+# 静的解析強化導入 https://pub.dev/packages/pedantic_mono
+include: package:pedantic_mono/analysis_options.yaml
 
 linter:
   # The lint rules applied to this project can be customized in the
