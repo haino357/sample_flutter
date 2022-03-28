@@ -20,6 +20,13 @@ samples, guidance on mobile development, and a full API reference.
 `test_flutter_app>lib>main.dart`
 共通のコードは上記に記載する。
 
+## 依存関係を記載するファイル
+` pubspec.yaml`には下記のような依存を追加している
+**静的解析強化**
+```
+dev_dependencies:
+  pedantic_mono: any　
+```
 
 ## 静的解析強化(pedantic_mono)導入
 ### 目的
