@@ -20,10 +20,20 @@ samples, guidance on mobile development, and a full API reference.
 `test_flutter_app>lib>main.dart`
 共通のコードは上記に記載する。
 
-## pubspec.yamlを変更後実行するコマンド
+## flutterコマンド
+### クリーンビルド
+ビルド時に生成されるファイル群のクリーン (削除) 時に利用する。
+buildと.dart_toolディレクトリを削除する。
+```
+flutter clean
+```
+### pubspec.yamlを変更後実行するコマンド
 ```
 flutter pub get
 ```
+
+### flutterコマンド参考
+- [Flutterコマンド一覧まとめ](https://qiita.com/kurun_pan/items/f9251b1827ce9dca9e14#-flutter-clean)
 
 ## 依存関係を記載するファイル
 ` pubspec.yaml`には下記のような依存を追加している
