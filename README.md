@@ -232,7 +232,30 @@ Now go finish building something awesome! 💪 You rock! 🤘🤩
 
 ### スプラッシュ画面作成参考資料
 - [公式ドキュメント](https://pub.dev/packages/flutter_native_splash)
-- 
+
+## Widget
+Scaffoldのbodyに複数のウェジェットを表示するには、主に３つのウェジェットを使う。
+- Column : 縦方向に複数のウェジェットを並べて表示
+- Row : 横方向に複数のウェジェットを並べて表示
+- Stack : 複数のウェジェットを重ねて表示
+
+**例**
+```
+@override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Column( //RowとStackでも同じ
+        children: [
+          Widget1(),
+          Widget2(),
+          Widget3(),
+          ・・・
+        ],
+      ),
+    );
+  }
+```
+
 ## Flutter全体の参考
 - [Flutter実践入門 ～環境構築からAndroid/iOS/Webに広告を付けて同時にリリース!!～](https://zenn.dev/kazutxt/books/flutter_practice_introduction)
 - [2021年 - これからFlutterを始める人へ学習方法のススメ](https://zenn.dev/tsuruo/articles/6cc7b5bf24bb65#%E3%83%AC%E3%82%A4%E3%82%A2%E3%82%A6%E3%83%88%E3%82%92%E4%BD%93%E7%B3%BB%E7%9A%84%E3%81%AB%E5%AD%A6%E3%81%B6%E3%81%AE%E3%81%AB%E3%82%AA%E3%82%B9%E3%82%B9%E3%83%A1)
