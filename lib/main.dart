@@ -148,6 +148,54 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headline4,
             ),
+            Container(
+              width: 100,
+              height: 100,
+              decoration: const BoxDecoration(
+                color: Colors.red,
+                borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(50),
+                ), // ここが指定箇所
+              ),
+            ),
+            Container(
+              width: 100,
+              height: 100,
+              decoration: const BoxDecoration(
+                color: Colors.red,
+                borderRadius: BorderRadius.only(
+                  topRight: Radius.circular(50),
+                ), // ここが指定箇所
+              ),
+            ),
+            Container(
+              width: 100,
+              height: 100,
+              decoration: const BoxDecoration(
+                color: Colors.red,
+                borderRadius: BorderRadius.only(
+                  bottomLeft: Radius.circular(50),
+                ), // ここが指定箇所
+              ),
+            ),
+            Container(
+              width: 100,
+              height: 100,
+              decoration: const BoxDecoration(
+                color: Colors.red,
+                borderRadius: BorderRadius.only(
+                  bottomRight: Radius.circular(50),
+                ), // ここが指定箇所
+              ),
+            ),
+            Container(
+              width: 100,
+              height: 100,
+              decoration: const BoxDecoration(
+                color: Colors.red,
+                shape: BoxShape.circle,
+              ),
+            )
           ],
         ),
       ),
