@@ -89,7 +89,7 @@ include: package:flutter_lints/flutter.yaml
 
 プロジェクトファイル直下の`pubspec.yaml`に下記のように依存関係を記載する。
 ```
-dev_dependencies:　　　　　　
+dependencies:　　　　　　
   flutter_native_splash: ^2.1.2+1
 ```
 
