@@ -1,26 +1,9 @@
 # sample_flutter
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-
-
-## dartで記載するコードのディレクトリ
+## ◇dartで記載するコードのディレクトリ
 `test_flutter_app>lib>main.dart`
 共通のコードは上記に記載する。
 
-## flutterコマンド
+## ◇flutterコマンド
 ### クリーンビルド
 ビルド時に生成されるファイル群のクリーン (削除) 時に利用する。
 buildと.dart_toolディレクトリを削除する。
@@ -35,7 +18,7 @@ flutter pub get
 ### flutterコマンド参考
 - [Flutterコマンド一覧まとめ](https://qiita.com/kurun_pan/items/f9251b1827ce9dca9e14#-flutter-clean)
 
-## 依存関係を記載するファイル
+## ◇依存関係を記載するファイル
 ` pubspec.yaml`には下記のような依存を追加している
 **静的解析強化**
 ```
@@ -48,7 +31,7 @@ dependencies:
   flutter_native_splash: ^2.1.2+1
 ```
 
-## 静的解析強化(pedantic_mono)導入
+## ◇静的解析強化(pedantic_mono)導入
 ### 目的
 (Flutter推奨 + α)に静的解析強化を行うため
 
@@ -82,7 +65,7 @@ include: package:flutter_lints/flutter.yaml
 - [Dart/Flutter の静的解析強化のススメ](https://medium.com/flutter-jp/analysis-b8dbb19d3978)
 - [Flutterのテンプレートにlinterが入りますよ](https://zenn.dev/sugitlab/articles/flutter_linter_recommend_sugitlab)
 
-## スプラッシュ画面作成
+## ◇スプラッシュ画面作成
 
 ### 具体的な方法
 1. インストール
@@ -233,7 +216,7 @@ Now go finish building something awesome! 💪 You rock! 🤘🤩
 ### スプラッシュ画面作成参考資料
 - [公式ドキュメント](https://pub.dev/packages/flutter_native_splash)
 
-## Widget
+## ◇Widget
 Scaffoldのbodyに複数のウェジェットを表示するには、主に３つのウェジェットを使う。
 - Column : 縦方向に複数のウェジェットを並べて表示
 - Row : 横方向に複数のウェジェットを並べて表示
@@ -331,6 +314,6 @@ Container(
 )
 ```
 
-## Flutter全体の参考
+## ◇Flutter全体の参考
 - [Flutter実践入門 ～環境構築からAndroid/iOS/Webに広告を付けて同時にリリース!!～](https://zenn.dev/kazutxt/books/flutter_practice_introduction)
 - [2021年 - これからFlutterを始める人へ学習方法のススメ](https://zenn.dev/tsuruo/articles/6cc7b5bf24bb65#%E3%83%AC%E3%82%A4%E3%82%A2%E3%82%A6%E3%83%88%E3%82%92%E4%BD%93%E7%B3%BB%E7%9A%84%E3%81%AB%E5%AD%A6%E3%81%B6%E3%81%AE%E3%81%AB%E3%82%AA%E3%82%B9%E3%82%B9%E3%83%A1)
