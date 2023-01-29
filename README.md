@@ -65,6 +65,52 @@ include: package:flutter_lints/flutter.yaml
 - [Dart/Flutter の静的解析強化のススメ](https://medium.com/flutter-jp/analysis-b8dbb19d3978)
 - [Flutterのテンプレートにlinterが入りますよ](https://zenn.dev/sugitlab/articles/flutter_linter_recommend_sugitlab)
 
+## ◇[SharedPreferences](https://pub.dev/packages/shared_preferences)
+### 目的
+データ用のプラットフォーム固有の永続ストレージを用意する。
+
+### 具体的な方法
+1. インストール
+   プロジェクトファイル直下の`pubspec.yaml`に下記のように依存関係を記載する。
+```
+dependencies:　　　　　　 // 既存部
+  shared_preferences:　　// 追加部
+```
+もしくは下記のコマンドを実行する。
+```
+ $ flutter pub add shared_preferences
+```
+### 利用方法
+利用するクラスにて下記のようにimportする必要がある
+```
+import 'package:shared_preferences/shared_preferences.dart';
+```
+**Shared preferencesのインスタンスを取得する**
+```
+final SharedPreferences prefs = await SharedPreferences.getInstance();
+```
+**データを読み書きする**
+```
+final SharedPreferences prefs = await SharedPreferences.getInstance();
+// 保存する場合
+prefs.setInt('counter', 123);  // int型
+prefs.setDouble('counter_double', 123.00);  // double型
+prefs.setBool('my_bool', true);  // bool型
+prefs.setString('my_string', 'My String Data');  // String型
+prefs.setStringList('my_string_list', ['apple', 'orange', 'grape']);  // String型のリスト
+// 書き出す場合
+prefs.getInt('counter') ?? 0;  // int型
+prefs.getDouble('counter_double') ?? 0.0;  // double型
+prefs.getBool('my_bool') ?? false;  // bool型
+prefs.getString('my_string') ?? '';  // String型
+prefs.getStringList('my_string_list') ?? [];  // String型のリスト
+```
+
+**データを削除する**
+```
+prefs.remove('counter');
+```
+
 ## ◇スプラッシュ画面作成
 
 ### 具体的な方法
